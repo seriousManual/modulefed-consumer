@@ -1,6 +1,6 @@
-import { useNumbers } from 'cha/numberStore'
+import { useNumbers } from 'cha'
 
-function Numbers() {
+function MyNumbers() {
   const numbersQuery = useNumbers()
 
   if (numbersQuery.isLoading) {
@@ -9,6 +9,7 @@ function Numbers() {
 
   return (
     <div>
+      meine eigene number impl mit dem state hook!
       {
         numbersQuery.data.map(nr => {
           return <div>{nr}</div>
@@ -18,4 +19,4 @@ function Numbers() {
   )
 }
 
-export default Numbers
+export default MyNumbers

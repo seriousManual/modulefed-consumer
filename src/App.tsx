@@ -1,7 +1,6 @@
-import CountWidget from 'cha/CountWidget'
-import { useNumbers } from 'cha/numberStore'
+import { Numbers, useNumbers } from 'cha'
 
-import Numbers from './Numbers'
+import MyNumbers from './MyNumbers'
 
 function App() {
   const numbersQuery = useNumbers()
@@ -12,13 +11,12 @@ function App() {
     <div>
       <h1>ohey!</h1>
 
-      <CountWidget />
-
       {numbers.map((nr, i) => {
         return <div key={i}>{nr}</div>
       })}
 
       <Numbers />
+      <MyNumbers />
     </div>
   )
 }
