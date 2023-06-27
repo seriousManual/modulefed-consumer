@@ -1,5 +1,5 @@
-import CountWidget from 'carrier-handling-app/CountWidget'
-import { useNumbers } from 'carrier-handling-app/numberStore'
+import CountWidget from 'cha/CountWidget'
+import { useNumbers } from 'cha/numberStore'
 
 import Numbers from './Numbers'
 
