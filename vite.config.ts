@@ -7,15 +7,16 @@ export default defineConfig({
   build: {
     target: 'esnext',
     modulePreload: false,
+    minify: false
   },
   plugins: [
     react(),
-    federation({
-      name: 'host-app',
-      remotes: {
-        'cha': "http://localhost:4173/assets/widgets.js",
-      },
-      shared: ['react', 'react-dom', '@tanstack/react-query']
-  })
+  //   federation({
+  //     name: 'host-app',
+  //     remotes: {
+  //       'cha': "http://localhost:4173/assets/widgets.js",
+  //     },
+  //     shared: ['react', 'react-dom', '@tanstack/react-query']
+  // })
   ],
 })
